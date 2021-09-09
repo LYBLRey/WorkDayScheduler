@@ -35,3 +35,7 @@ var plan5El = document.querySelector("#plan5");
 var save5El = document.querySelector("#save5");
 
 
+function displayDay() {
+    $("#currentDay").text(moment().format("dddd, MMMM Do"));
+}
+setInterval(displayDay, 1000);
